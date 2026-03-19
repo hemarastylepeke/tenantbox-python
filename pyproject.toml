@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tenantbox"
+version = "0.1.0"
+description = "Per-tenant file storage, quota enforcement, and usage tracking for any Python application."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Tenantbox", email = "hello@tenantbox.io" }]
+keywords = ["storage", "multi-tenant", "file upload", "r2", "s3", "saas"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Django",
+]
+requires-python = ">=3.9"
+
+# Core dependency: just requests. Django is optional.
+dependencies = ["requests>=2.28.0"]
+
+[project.optional-dependencies]
+django = ["Django>=3.2"]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock>=3.10",
+    "responses>=0.23",   # Mock HTTP in tests
+    "black",
+    "isort",
+    "mypy",
+    "types-requests",
+]
+
+[project.urls]
+Homepage = "https://tenantbox.dev"
+Documentation = "https://tenantbox.dev/apidocs"
+Repository = "https://github.com/tenantbox/tenantbox-python"
+"Bug Tracker" = "https://github.com/tenantbox/tenantbox-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tenantbox*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true
