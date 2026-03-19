@@ -1,6 +1,6 @@
 # Tenantbox Python SDK
 
-Per-tenant file storage, quota enforcement, and usage tracking for any Python application — built on Tenantbox.
+Per-tenant file storage, quota enforcement, and usage tracking for any Python application built on Tenantbox.
 
 ```bash
 pip install tenantbox
