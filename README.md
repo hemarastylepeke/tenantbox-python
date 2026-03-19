@@ -617,7 +617,7 @@ except TenantboxAPIError as e:
 | `TenantboxAuthError` | Invalid or inactive API key (401) |
 | `QuotaExceededError` | Tenant has exceeded their quota (403) |
 | `TenantboxNotFoundError` | File or tenant not found (404) |
-| `TenantboxUploadError` | Presigned URL obtained but R2 upload failed |
+| `TenantboxUploadError` | Presigned URL obtained but Tenantbox storage upload failed |
 | `TenantboxAPIError` | Unexpected API error (5xx, malformed response) |
 | `TenantboxConfigError` | SDK misconfiguration (missing API key, bad URL) |
 
