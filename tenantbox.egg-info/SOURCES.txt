@@ -12,3 +12,4 @@ tenantbox.egg-info/SOURCES.txt
 tenantbox.egg-info/dependency_links.txt
 tenantbox.egg-info/requires.txt
 tenantbox.egg-info/top_level.txt
+tests/test_client.py

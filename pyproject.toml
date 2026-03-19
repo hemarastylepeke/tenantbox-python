@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Per-tenant file storage, quota enforcement, and usage tracking for any Python application."
 readme = "README.md"
 license = { file = "LICENSE" }
-authors = [{ name = "Tenantbox", email = "hello@tenantbox.io" }]
+authors = [{ name = "Tenantbox", email = "hello@voltageitlabs.com" }]
 keywords = ["storage", "multi-tenant", "file upload", "r2", "s3", "saas"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -43,8 +43,8 @@ dev = [
 [project.urls]
 Homepage = "https://tenantbox.dev"
 Documentation = "https://tenantbox.dev/apidocs"
-Repository = "https://github.com/tenantbox/tenantbox-python"
-"Bug Tracker" = "https://github.com/tenantbox/tenantbox-python/issues"
+Repository = "https://github.com/hemarastylepeke/tenantbox-python"
+"Bug Tracker" = "https://github.com/hemarastylepeke/tenantbox-python/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

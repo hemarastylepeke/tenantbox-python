@@ -653,6 +653,18 @@ human_readable_bytes(1_073_741_824) # → "1.0 GB"
 
 ---
 
+## Running tests
+
+To run automated tests, execute:
+
+`pytest tests/ -v`
+
+To run manual tests, execute:
+
+`python test_smoke.py`
+
+---
+
 ## License
 
 MIT
